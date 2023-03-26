@@ -14,11 +14,25 @@
 
 // ------------#3 Type Basics---------------
 
-let age = 30;
-age = "hi";
+// let age = 30;
 
-const circ = (diameter: number) => {
-  return diameter * Math.PI;
+// const circ = (diameter: number) => {
+//   return diameter * Math.PI;
+// };
+
+// console.log(circ(10));
+
+// ------------#3 Array and Objects---------------
+
+let names = ["Anna", "Helen"];
+let mixed = ["Paris", 10, "Sam", true];
+console.log(names);
+mixed.push(12);
+console.log(mixed);
+
+//objects
+let ninja = {
+  name: "mario",
+  isBlackBelt: true,
+  age: 30,
 };
-
-console.log(circ(10));

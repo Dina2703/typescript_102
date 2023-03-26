@@ -7,9 +7,20 @@
 //   console.log(input);
 // });
 // ------------#3 Type Basics---------------
-var age = 30;
-age = "hi";
-var circ = function (diameter) {
-    return diameter * Math.PI;
+// let age = 30;
+// const circ = (diameter: number) => {
+//   return diameter * Math.PI;
+// };
+// console.log(circ(10));
+// ------------#3 Array and Objects---------------
+var names = ["Anna", "Helen"];
+var mixed = ["Paris", 10, "Sam", true];
+console.log(names);
+mixed.push(12);
+console.log(mixed);
+//objects
+var ninja = {
+    name: "mario",
+    isBlackBelt: true,
+    age: 30
 };
-console.log(circ(10));
