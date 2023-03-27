@@ -67,4 +67,23 @@
 // mixed.push(true);
 // console.log(mixed);
 // ------------#7 Better Workflow & tsconfig---------------
-console.log("test");
+// console.log("test");
+// ------------#8 Function Basics---------------
+let greet;
+greet = () => {
+    console.log("hello, World");
+};
+//for 'c' the  default value is 10, if we don't pass any other value.
+const add = (a, b, c = 10) => {
+    console.log(a + b + c);
+    console.log(c);
+};
+add(2, 4);
+add(2, 4, 33);
+//example with a function that returns a value
+const minus = (a, b) => {
+    return a + b;
+};
+let result = minus(10, 7);
+console.log(typeof result);
+//void when a function returns nothing
