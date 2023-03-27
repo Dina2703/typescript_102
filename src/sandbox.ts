@@ -118,14 +118,14 @@
 //void when a function returns nothing
 
 // ------------#9 Type Aliases---------------
-type StringOrNum = string | number;
-type objWithName = { name: string; uid: StringOrNum };
+// type StringOrNum = string | number;
+// type objWithName = { name: string; uid: StringOrNum };
 
-const logDetails = {uid: StringOrNum, item: string} => {
-  console.log(`${item} has a uid of ${uid}`);
-}
+// const logDetails = {uid: StringOrNum, item: string} => {
+//   console.log(`${item} has a uid of ${uid}`);
+// }
 
-const greet = (user: objWithName) => {
-  console.log(`${user.name} says hello`);
-  
-}
+// const greet = (user: objWithName) => {
+//   console.log(`${user.name} says hello`);
+
+// }
