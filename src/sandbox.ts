@@ -79,12 +79,15 @@
 
 // ------------#6 Dynamic (Any)Types---------------
 
-let age: any = 25;
-age = true;
+// let age: any = 25;
+// age = true;
 
 // or we can use it for an array of mixed type
-let mixed: any[] = [];
-mixed.push(10);
-mixed.push("Hi");
-mixed.push(true);
-console.log(mixed);
+// let mixed: any[] = [];
+// mixed.push(10);
+// mixed.push("Hi");
+// mixed.push(true);
+// console.log(mixed);
+
+// ------------#7 Better Workflow & tsconfig---------------
+console.log("test");
