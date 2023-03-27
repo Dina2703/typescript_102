@@ -129,3 +129,38 @@
 //   console.log(`${user.name} says hello`);
 
 // }
+
+// ------------#9 Function Signatures---------------
+// let greet: Function;
+
+//example 1
+let greet: (a: string, b: string) => void; //signature for a function that takes in 2 argument, both string, and returns nothing.
+
+greet = (name: string, greeting: string) => {
+  console.log(`${name} says ${greeting}`);
+};
+
+//example 2
+let calc: (a: number, b: number, action: string) => number; //function signature that takes in 3 arguments and returns a number
+
+calc = (numOne: number, numTwo: number, action: string) => {
+  if (action === "add") {
+    return numOne + numTwo;
+  } else {
+    return numOne - numTwo;
+  }
+};
+
+//example 3
+let logDetails: (obj: { name: string; age: number }) => void; //function signature that takes in an object with name and age properties, and returns nothing.
+
+// logDetails = (ninja: { name: string; age: number }) => {
+//   console.log(`$(ninja.name) is ${ninja.age} years old`);
+// };
+
+//version with type alias
+
+type person = { name: string; age: number };
+logDetails = (ninja: person) => {
+  console.log(`$(ninja.name) is ${ninja.age} years old`);
+};
