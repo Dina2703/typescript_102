@@ -20,3 +20,35 @@ form.addEventListener("submit", (e: Event) => {
 });
 
 //.valueAsNumber to convert a string type into number
+
+// -----------CLASSES--------------
+class Invoice {
+  //initialize properties of the Invoice obj
+  client: string;
+  details: string;
+  amount: number;
+
+  //show  that the object gonna get in 3 parameters, and they gonna be assigned as values for the object props(that we define earlier)
+  constructor(c: string, d: string, a: number) {
+    this.client = c;
+    this.details = d;
+    this.amount = a;
+  }
+
+  //create a method ob an object
+  format() {
+    return `${this.client} owes  $${this.amount} for ${this.details}`;
+  }
+}
+
+//create an object based on class Invoice
+
+const invOne = new Invoice("Jhon", "mopping", 1000);
+const invTwo = new Invoice("Anna", "vacuuming", 2000);
+console.log(invOne.format());
+console.log(invOne);
+
+//create an array to store ONLY objects that were created using Invoice class.
+let invoices: Invoice[] = [];
+invoices.push(invOne, invTwo);
+console.log(invoices);
